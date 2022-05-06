@@ -1,2 +1,2 @@
-# c-fundamentos
-C# Fundamentos
+# c-fundamentals
+C# Fundamentals
