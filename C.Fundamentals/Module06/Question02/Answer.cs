@@ -121,7 +121,7 @@
                     time = $"{hour:d2}:{minute:d2}:{second:d2}";
                 }
 
-                Console.WriteLine($"{date} {time}");
+                Console.WriteLine("{0} {1}", date, time);
             }
         }
     }

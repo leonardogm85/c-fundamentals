@@ -64,8 +64,8 @@
             List<int> votes = new List<int>();
 
             while (true)
-            {
-                Console.WriteLine("Escolha a sua linguagem de programação preferida (Para encerrar a votação informar 0):");
+            {// Choose your
+                Console.WriteLine("Choose your preferred programming language (To end voting, enter 0):");
 
                 foreach (KeyValuePair<int, string> option in options)
                 {
@@ -116,8 +116,8 @@
 
             Console.WriteLine(
                 "{0,-25}{1,8}{2,10}",
-                "Linguagem de Programacao",
-                "Votos",
+                "Programming language",
+                "Votes",
                 "%");
 
             Console.WriteLine(
@@ -157,7 +157,7 @@
                 totalVotes);
 
             Console.WriteLine(
-                "A opção {0} foi a mais votada, com {1} voto(s).",
+                "Option {0} received the most votes, with {1} vote(s).",
                 options[codeOption],
                 sumOption);
         }
@@ -169,7 +169,7 @@
                 return value;
             }
 
-            throw new FormatException("Foi informada uma opção inválida. Favor votar novamente.");
+            throw new FormatException("An invalid option was given. Please vote again.");
         }
     }
 }

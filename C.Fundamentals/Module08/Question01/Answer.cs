@@ -59,7 +59,7 @@
 
             Figure complexFigure = new ComplexFigure(figures);
 
-            Console.WriteLine($"Área da figura complexa: {complexFigure.CalculateArea()}");
+            Console.WriteLine("Complex figure area: {0}", complexFigure.CalculateArea());
         }
     }
 

@@ -45,8 +45,8 @@
         internal static void Print(Collection collection)
         {
             string collectionType = collection is Stack
-                ? "Pilha"
-                : "Fila";
+                ? "Stack"
+                : "Queue";
 
             Console.WriteLine(collectionType);
 

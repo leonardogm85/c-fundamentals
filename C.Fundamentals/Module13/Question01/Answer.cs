@@ -27,11 +27,11 @@
         {
             int[] numbers = new int[5];
 
-            Console.WriteLine("Digite 5 números:");
+            Console.WriteLine("Enter 5 numbers:");
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine("Número {0}:", i + 1);
+                Console.WriteLine("Number {0}:", i + 1);
                 numbers[i] = Read();
             }
 
@@ -50,15 +50,15 @@
 
             double average = (double)total / numbers.Length;
 
-            Console.WriteLine($"Média: {average}");
-            Console.WriteLine($"Maior: {max}");
-            Console.WriteLine($"Menor: {min}");
+            Console.WriteLine("Average of numbers: {0}", average);
+            Console.WriteLine("Greatest number: {0}", max);
+            Console.WriteLine("smallest number: {0}", min);
 
             Array.Sort(numbers, new NumbersInDescendingOrder());
 
             string numbersInDescendingOrder = string.Join(", ", numbers);
 
-            Console.WriteLine($"Números em ordem decrescente: {numbersInDescendingOrder}");
+            Console.WriteLine("Numbers in descending order: {0}", numbersInDescendingOrder);
         }
 
         private static int Read()
@@ -68,7 +68,7 @@
                 return value;
             }
 
-            throw new FormatException("Não foi possível converter o valor digitado para um número válido.");
+            throw new FormatException("Could not convert the entered value to a valid number.");
         }
     }
 

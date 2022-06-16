@@ -81,10 +81,10 @@
             Figure circumference = new Circumference(3);
             Figure trapeze = new Trapeze(10, 5, 15);
 
-            Console.WriteLine($"Área do Triângulo: {triangle.CalculateArea()}");
-            Console.WriteLine($"Área do Quadrado: {square.CalculateArea()}");
-            Console.WriteLine($"Área do Circunferência: {circumference.CalculateArea()}");
-            Console.WriteLine($"Área do Trapézio: {trapeze.CalculateArea()}");
+            Console.WriteLine("Triangle area: {0}", triangle.CalculateArea());
+            Console.WriteLine("Square area: {0}", square.CalculateArea());
+            Console.WriteLine("Circumference area: {0}", circumference.CalculateArea());
+            Console.WriteLine("Trapeze area: {0}", trapeze.CalculateArea());
         }
     }
 

@@ -56,11 +56,11 @@
         {
             Products products = new Products(items);
 
-            Product product1 = new Product("Laranja", 2.5);
-            Product product2 = new Product("Laranja", 2.7);
-            Product product3 = new Product("Maçã", 1.45);
-            Product product4 = new Product("Mamão", 4.95);
-            Product product5 = new Product("Limão", 2.3);
+            Product product1 = new Product("Orange", 2.5);
+            Product product2 = new Product("Orange", 2.7);
+            Product product3 = new Product("Apple", 1.45);
+            Product product4 = new Product("Papaya", 4.95);
+            Product product5 = new Product("Lemon", 2.3);
 
             products.Add(product1);
             products.Add(product2);

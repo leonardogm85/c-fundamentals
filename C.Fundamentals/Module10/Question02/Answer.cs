@@ -23,13 +23,13 @@
         {
             try
             {
-                Console.WriteLine("Escolha uma das opçcões de bebidas abaixo:");
+                Console.WriteLine("Choose one of the drink options below:");
 
                 Drink[] drinks = Enum.GetValues<Drink>();
 
                 foreach (Drink drink in drinks)
                 {
-                    Console.WriteLine($"{(int)drink} - {drink}");
+                    Console.WriteLine("{0} - {1}", (int)drink, drink);
                 }
 
                 int option = Read();
@@ -38,11 +38,11 @@
                 {
                     Drink selectedDrink = (Drink)option;
 
-                    Console.WriteLine($"Opção escolhida: {(int)selectedDrink} - {selectedDrink}");
+                    Console.WriteLine($"Chosen option: {(int)selectedDrink} - {selectedDrink}");
                 }
                 else
                 {
-                    Console.WriteLine("Escolha uma opção válida.");
+                    Console.WriteLine("Choose a valid option.");
                 }
             }
             catch (FormatException exception)
@@ -58,7 +58,7 @@
                 return value;
             }
 
-            throw new FormatException("Não foi possível converter o valor digitado para um número válido.");
+            throw new FormatException("Could not convert the entered value to a valid number.");
         }
     }
 

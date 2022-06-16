@@ -60,17 +60,17 @@
         internal static void Run()
         {
             Product bean = new Product(
-                "Feijão",
+                "Bean",
                 2.5,
                 new DateTime(2020, 10, 4));
 
             Product coffee = new Product(
-                "Café",
+                "Coffe",
                 1.0,
                 new DateTime(2022, 1, 1));
 
             Product beet = new Product(
-                "Beterraba",
+                "Beet",
                 0.9,
                 new DateTime(2017, 11, 12));
 

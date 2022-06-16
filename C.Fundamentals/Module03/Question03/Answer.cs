@@ -24,13 +24,13 @@
     {
         internal static void Run()
         {
-            Item1();
-            Item2();
-            Item3();
-            Item4();
+            Task1();
+            Task2();
+            Task3();
+            Task4();
         }
 
-        private static void Item1()
+        private static void Task1()
         {
             string? item = null;
 
@@ -46,10 +46,12 @@
                 }
             }
 
-            Console.WriteLine($"Item 1: {item}");
+            Console.WriteLine("Print all numbers from 10 to 25:");
+            Console.WriteLine(item);
+            Console.WriteLine();
         }
 
-        private static void Item2()
+        private static void Task2()
         {
             int sum = 0;
 
@@ -58,10 +60,12 @@
                 sum += number;
             }
 
-            Console.WriteLine($"Item 2: {sum}");
+            Console.WriteLine("Print the sum of the numbers from 1 to 100, skipping two by two (1, 3, 5, 7, etc.):");
+            Console.WriteLine(sum);
+            Console.WriteLine();
         }
 
-        private static void Item3()
+        private static void Task3()
         {
             string? item = null;
 
@@ -83,10 +87,12 @@
                 number++;
             }
 
-            Console.WriteLine($"Item 3: {item}");
+            Console.WriteLine("Starting at 0, print the following numbers, while the sum of the numbers already printed is less than 100:");
+            Console.WriteLine(item);
+            Console.WriteLine();
         }
 
-        private static void Item4()
+        private static void Task4()
         {
             string? item = null;
 
@@ -104,7 +110,9 @@
                 }
             }
 
-            Console.WriteLine($"Item 4: {item}");
+            Console.WriteLine("Print the 9 multiplication table (up to the tenth value):");
+            Console.WriteLine(item);
+            Console.WriteLine();
         }
     }
 }

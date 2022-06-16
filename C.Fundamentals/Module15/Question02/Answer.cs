@@ -59,11 +59,11 @@
     {
         internal static void Run()
         {
-            Console.WriteLine("Escolha entre gravar ou ler os dados de um arquivo.");
-            Console.WriteLine("1. Gravar");
-            Console.WriteLine("2. Ler");
+            Console.WriteLine("Choose between writing or reading data from a file.");
+            Console.WriteLine("1. To write");
+            Console.WriteLine("2. To read");
 
-            string path = @"livro.bin";
+            string path = "book.bin";
 
             int option = Read();
 
@@ -77,7 +77,7 @@
                     {
                         Book book1 = new Book
                         {
-                            Title = "Código Limpo",
+                            Title = "Clean Code",
                             PageNumber = 400,
                             Author = new Author
                             {
@@ -88,7 +88,7 @@
 
                         Book book2 = new Book
                         {
-                            Title = "Refatoração",
+                            Title = "Refactoring",
                             PageNumber = 450,
                             Author = new Author
                             {
@@ -131,7 +131,7 @@
                 return value;
             }
 
-            throw new FormatException("Não foi possível converter o valor digitado para um número válido.");
+            throw new FormatException("Could not convert the entered value to a valid number.");
         }
     }
 
@@ -167,7 +167,7 @@
 
         public override string ToString()
         {
-            return $"[Nome: {Name}, Data de nascimento: {BirthDate:dd/MM/yyyy}]";
+            return $"[Name: {Name}, Birth date: {BirthDate:dd/MM/yyyy}]";
         }
     }
 
@@ -202,7 +202,7 @@
 
         public override string ToString()
         {
-            return $"[Título: {Title}, Número de página(s): {PageNumber}, Autor: {Author}]";
+            return $"[Title: {Title}, Number of page(s): {PageNumber}, Author: {Author}]";
         }
     }
 }

@@ -43,7 +43,7 @@
 
         public virtual void Print()
         {
-            Console.WriteLine($"x: {x}, y: {y}");
+            Console.WriteLine("Point 2D = x: {0}, y: {1}", x, y);
         }
     }
 
@@ -59,7 +59,7 @@
 
         public override void Print()
         {
-            Console.WriteLine($"x: {x}, y: {y}, z: {z}");
+            Console.WriteLine("Point 3D = x: {0}, y: {1}, z: {2}", x, y, z);
         }
     }
 }

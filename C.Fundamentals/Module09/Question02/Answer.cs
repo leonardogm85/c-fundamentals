@@ -25,10 +25,10 @@
             }
             catch (NullReferenceException)
             {
-                Console.WriteLine("Referência de objeto não definida para uma instância de um objeto.");
+                Console.WriteLine("Object reference not set to an instance of an object.");
             }
 
-            Console.WriteLine("Processo finalizado.");
+            Console.WriteLine("Process finished.");
         }
     }
 }

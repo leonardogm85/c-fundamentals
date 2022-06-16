@@ -12,51 +12,51 @@
         {
             try
             {
-                Console.WriteLine("Digite o dia:");
+                Console.Write("Enter the day: ");
                 int day = Read();
 
-                Console.WriteLine("Digite o mês:");
+                Console.Write("Enter the month: ");
                 int month = Read();
 
-                Console.WriteLine("Digite o ano:");
+                Console.Write("Enter the year: ");
                 int year = Read();
 
                 if (year < 1900 || year > 2999)
                 {
-                    Console.WriteLine("Data inválida");
+                    Console.WriteLine("Invalid date.");
 
                     return;
                 }
 
                 if (month < 1 || month > 12)
                 {
-                    Console.WriteLine("Data inválida");
+                    Console.WriteLine("Invalid date.");
 
                     return;
                 }
 
                 if (month == 2 && (day < 1 || day > 28))
                 {
-                    Console.WriteLine("Data inválida");
+                    Console.WriteLine("Invalid date.");
 
                     return;
                 }
 
                 if ((month == 4 || month == 6 || month == 9 || month == 11) && (day < 1 || day > 30))
                 {
-                    Console.WriteLine("Data inválida");
+                    Console.WriteLine("Invalid date.");
 
                     return;
                 }
 
                 if (day < 1 || day > 31)
                 {
-                    Console.WriteLine("Data inválida");
+                    Console.WriteLine("Invalid date.");
 
                     return;
                 }
 
-                Console.WriteLine("Data válida");
+                Console.WriteLine("Valid date.");
             }
             catch (FormatException exception)
             {
@@ -71,7 +71,7 @@
                 return value;
             }
 
-            throw new FormatException("Não foi possível converter o valor digitado para um número válido.");
+            throw new FormatException("Could not convert the entered value to a valid number.");
         }
     }
 }

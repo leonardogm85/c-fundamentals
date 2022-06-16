@@ -17,12 +17,12 @@
     {
         internal static void Run()
         {
-            Console.WriteLine("Criar uma matriz de inteiros de duas dimensões:");
+            Console.WriteLine("Create a two-dimensional integer array:");
 
-            Console.WriteLine("Qual o número de linhas:");
+            Console.Write("What is the number of rows: ");
             int rowNumbers = Read();
 
-            Console.WriteLine("Qual o número de colunas:");
+            Console.Write("What is the number of columns: ");
             int columnNumbers = Read();
 
             Console.WriteLine();
@@ -34,7 +34,7 @@
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    Console.WriteLine("Qual o valor da posição [{0}, {1}]", i, j);
+                    Console.WriteLine("What is the position value [{0}, {1}]", i, j);
                     int value = Read();
                     matrix[i, j] = value;
                     sum[j] += value;
@@ -68,7 +68,7 @@
                 return value;
             }
 
-            throw new FormatException("Não foi possível converter o valor digitado para um número válido.");
+            throw new FormatException("Could not convert the entered value to a valid number.");
         }
     }
 }

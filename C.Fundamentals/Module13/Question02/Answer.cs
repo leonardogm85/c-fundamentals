@@ -112,7 +112,7 @@
         {
             if (count < 0 || count > Cards.Length)
             {
-                throw new ArgumentOutOfRangeException("A quantidade a ser distribuída deve ser maior que zero e menor ou igual ao número de cartas.");
+                throw new ArgumentOutOfRangeException("The amount to be dealt must be greater than zero and less than or equal to the number of cards.");
             }
 
             Card[] cardsDealt = new Card[count];

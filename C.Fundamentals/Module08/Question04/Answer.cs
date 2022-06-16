@@ -14,9 +14,9 @@
             ICalculableArea circumference = new Circumference(2);
             ICalculableArea rectangle = new Rectancle(2, 4);
 
-            Console.WriteLine($"Área do quadrado: {square.CalculateArea()}");
-            Console.WriteLine($"Área do circunferência: {circumference.CalculateArea()}");
-            Console.WriteLine($"Área do retângulo: {rectangle.CalculateArea()}");
+            Console.WriteLine($"Square area: {square.CalculateArea()}");
+            Console.WriteLine($"Circumference area: {circumference.CalculateArea()}");
+            Console.WriteLine($"Rectangle area: {rectangle.CalculateArea()}");
         }
     }
 

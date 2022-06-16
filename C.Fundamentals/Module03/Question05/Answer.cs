@@ -42,7 +42,7 @@
                 }
             }
 
-            Console.WriteLine($"Resultado: {item}");
+            Console.WriteLine("Print the first 15 numbers of the Fibonacci series: {0}", item);
         }
     }
 }

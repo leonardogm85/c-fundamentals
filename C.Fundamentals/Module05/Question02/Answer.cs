@@ -112,11 +112,11 @@
 
             Class @class = new Class(student1, student2, student3);
 
-            Console.WriteLine($"Média do primeiro aluno: {student1.CalculateAverage()}");
-            Console.WriteLine($"Média do segundo aluno: {student2.CalculateAverage()}");
-            Console.WriteLine($"Média do terceiro aluno: {student3.CalculateAverage()}");
+            Console.WriteLine("Grade average of the first student: {0}", student1.CalculateAverage());
+            Console.WriteLine("Grade average of the second student: {0}", student2.CalculateAverage());
+            Console.WriteLine("Grade average of the third student: {0}", student3.CalculateAverage());
 
-            Console.WriteLine($"Média da turma: {@class.CalculateAverage()}");
+            Console.WriteLine("Grade average of the class: {0}", @class.CalculateAverage());
         }
     }
 

@@ -71,7 +71,7 @@
 
         public void Print()
         {
-            Console.WriteLine($"Altura: {height}, Largura: {width}, Aberta: {open}");
+            Console.WriteLine("Door = Height: {0}, Width: {1}, Open: {2}", height, width, open);
         }
 
         public object Clone()

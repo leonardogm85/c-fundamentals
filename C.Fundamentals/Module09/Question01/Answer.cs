@@ -40,7 +40,7 @@
             }
             catch (InvalidValueException exception)
             {
-                Console.WriteLine($"{exception.Message} -> Valor: {exception.Value}");
+                Console.WriteLine("{0} -> Value: {1}", exception.Message, exception.Value);
             }
 
             try
@@ -49,7 +49,7 @@
             }
             catch (InvalidValueException exception)
             {
-                Console.WriteLine($"{exception.Message} -> Valor: {exception.Value}");
+                Console.WriteLine("{0} -> Value: {1}", exception.Message, exception.Value);
             }
 
             try
@@ -58,7 +58,7 @@
             }
             catch (InsufficientBalanceException exception)
             {
-                Console.WriteLine($"{exception.Message} -> Saldo: {exception.Balance}");
+                Console.WriteLine("{0} -> Balance: {1}", exception.Message, exception.Balance);
             }
 
             try
@@ -67,7 +67,7 @@
             }
             catch (InvalidValueException exception)
             {
-                Console.WriteLine($"{exception.Message} -> Valor: {exception.Value}");
+                Console.WriteLine("{0} -> Value: {1}", exception.Message, exception.Value);
             }
 
             try
@@ -76,7 +76,7 @@
             }
             catch (InsufficientBalanceException exception)
             {
-                Console.WriteLine($"{exception.Message} -> Saldo: {exception.Balance}");
+                Console.WriteLine("{0} -> Balance: {1}", exception.Message, exception.Balance);
             }
         }
     }
@@ -89,7 +89,7 @@
         {
             if (value <= 0)
             {
-                throw new InvalidValueException("O valor a ser depositado não deve ser menor ou igual a zero.", value);
+                throw new InvalidValueException("The amount to be deposited must not be less than or equal to zero.", value);
             }
 
             Balance += value;
@@ -99,12 +99,12 @@
         {
             if (value <= 0)
             {
-                throw new InvalidValueException("O valor a ser sacado não deve ser menor ou igual a zero.", value);
+                throw new InvalidValueException("The amount to be withdrawn must not be less than or equal to zero.", value);
             }
 
             if (value > Balance)
             {
-                throw new InsufficientBalanceException("O valor a ser sacado não deve ser maior que o saldo.", Balance);
+                throw new InsufficientBalanceException("The amount to be withdrawn must not be greater than the balance.", Balance);
             }
 
             Balance -= value;
@@ -114,12 +114,12 @@
         {
             if (value <= 0)
             {
-                throw new InvalidValueException("O valor a ser transferido não deve ser menor ou igual a zero.", value);
+                throw new InvalidValueException("The amount to be transferred must not be less than or equal to zero.", value);
             }
 
             if (value > Balance)
             {
-                throw new InsufficientBalanceException("O valor a ser transferido não deve ser maior que o saldo.", Balance);
+                throw new InsufficientBalanceException("The amount to be transferred must not be greater than the balance.", Balance);
             }
 
             Withdraw(value);

@@ -30,7 +30,7 @@
                 }
             }
 
-            Console.WriteLine($"Resultado: {sum}");
+            Console.WriteLine("Print factorial of 10: {0}", sum);
         }
     }
 }

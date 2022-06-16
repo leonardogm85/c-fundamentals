@@ -42,8 +42,8 @@
             investmentAccount.Withdraw(200);
             investmentAccount.Transfer(100, checkingAccount);
 
-            Console.WriteLine($"Saldo da conta corrente: {checkingAccount.CalculateBalance()}");
-            Console.WriteLine($"Saldo da conta investimento: {investmentAccount.CalculateBalance()}");
+            Console.WriteLine($"Checking account balance: {checkingAccount.CalculateBalance()}");
+            Console.WriteLine($"Investment account balance: {investmentAccount.CalculateBalance()}");
         }
     }
 

@@ -15,7 +15,7 @@
     /// </para>
     /// <para>
     ///     Crie uma aplicação que instancia três veículos, um de cada tipo, e chama os métodos Ligar(),
-    ///     Desligar() e a property Ligado.O resultado obtido deve ser consistente com o que o modelo
+    ///     Desligar() e a property Ligado. O resultado obtido deve ser consistente com o que o modelo
     ///     representa. Por exemplo, ao chamar o método Ligar() de um Automovel, é esperado que a
     ///     property Ligado retorne true.
     /// </para>
@@ -26,21 +26,23 @@
         {
             Vehicle car = new Car();
             car.TurnOn();
-            Console.WriteLine(car.On);
+            Console.WriteLine("Car on: {0}", car.On);
             car.TurnOff();
-            Console.WriteLine(car.On);
+            Console.WriteLine("Car on: {0}", car.On);
+            Console.WriteLine();
 
             Vehicle motorcycle = new Motorcycle();
             motorcycle.TurnOn();
-            Console.WriteLine(motorcycle.On);
+            Console.WriteLine("Motorcycle on: {0}", motorcycle.On);
             motorcycle.TurnOff();
-            Console.WriteLine(motorcycle.On);
+            Console.WriteLine("Motorcycle on: {0}", motorcycle.On);
+            Console.WriteLine();
 
             Vehicle bus = new Bus();
             bus.TurnOn();
-            Console.WriteLine(bus.On);
+            Console.WriteLine("Bus on: {0}", bus.On);
             bus.TurnOff();
-            Console.WriteLine(bus.On);
+            Console.WriteLine("Bus on: {0}", bus.On);
         }
     }
 
@@ -64,13 +66,13 @@
         public override void TurnOn()
         {
             base.TurnOn();
-            Console.WriteLine("Automóvel ligado");
+            Console.WriteLine("Car on");
         }
 
         public override void TurnOff()
         {
             base.TurnOff();
-            Console.WriteLine("Automóvel desligado");
+            Console.WriteLine("Car off");
         }
     }
 
@@ -79,13 +81,13 @@
         public override void TurnOn()
         {
             base.TurnOn();
-            Console.WriteLine("Motocicleta ligado");
+            Console.WriteLine("Motorcycle on");
         }
 
         public override void TurnOff()
         {
             base.TurnOff();
-            Console.WriteLine("Motocicleta desligado");
+            Console.WriteLine("Motorcycle off");
         }
     }
 
@@ -94,13 +96,13 @@
         public override void TurnOn()
         {
             base.TurnOn();
-            Console.WriteLine("Ônibus ligado");
+            Console.WriteLine("Bus on");
         }
 
         public override void TurnOff()
         {
             base.TurnOff();
-            Console.WriteLine("Ônibus desligado");
+            Console.WriteLine("Bus off");
         }
     }
 }

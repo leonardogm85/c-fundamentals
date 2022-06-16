@@ -54,43 +54,47 @@
 
             watch1.Set(0, 30, 50);
 
-            Console.WriteLine("Primeiro relôgio:");
+            Console.WriteLine("First watch:");
 
-            Console.WriteLine($"Posição do Hora: {watch1.hourHand.position}");
-            Console.WriteLine($"Posição do Minuto: {watch1.minuteHand.position}");
-            Console.WriteLine($"Posição do Segundo: {watch1.secondHand.position}");
+            Console.WriteLine("Hour position: {0}", watch1.hourHand.position);
+            Console.WriteLine("Minute position: {0}", watch1.minuteHand.position);
+            Console.WriteLine("Second position: {0}", watch1.secondHand.position);
 
-            Console.WriteLine($"Hora: {watch1.ReadHour()}");
-            Console.WriteLine($"Minuto: {watch1.ReadMinute()}");
-            Console.WriteLine($"Segundo: {watch1.ReadSecond()}");
+            Console.WriteLine("Hour: {0}", watch1.ReadHour());
+            Console.WriteLine("Minute: {0}", watch1.ReadMinute());
+            Console.WriteLine("Second: {0}", watch1.ReadSecond());
+
+            Console.WriteLine();
 
             Watch watch2 = new Watch();
 
             watch2.Set(10, 10, 10);
 
-            Console.WriteLine("Segundo relôgio:");
+            Console.WriteLine("Second watch:");
 
-            Console.WriteLine($"Posição do Hora: {watch2.hourHand.position}");
-            Console.WriteLine($"Posição do Minuto: {watch2.minuteHand.position}");
-            Console.WriteLine($"Posição do Segundo: {watch2.secondHand.position}");
+            Console.WriteLine("Hour position: {0}", watch2.hourHand.position);
+            Console.WriteLine("Minute position: {0}", watch2.minuteHand.position);
+            Console.WriteLine("Second position: {0}", watch2.secondHand.position);
 
-            Console.WriteLine($"Hora: {watch2.ReadHour()}");
-            Console.WriteLine($"Minuto: {watch2.ReadMinute()}");
-            Console.WriteLine($"Segundo: {watch2.ReadSecond()}");
+            Console.WriteLine("Hour: {0}", watch2.ReadHour());
+            Console.WriteLine("Minute: {0}", watch2.ReadMinute());
+            Console.WriteLine("Second: {0}", watch2.ReadSecond());
+
+            Console.WriteLine();
 
             Watch watch3 = new Watch();
 
             watch3.Set(22, 40, 30);
 
-            Console.WriteLine("Terceiro relôgio:");
+            Console.WriteLine("Third watch:");
 
-            Console.WriteLine($"Posição do Hora: {watch3.hourHand.position}");
-            Console.WriteLine($"Posição do Minuto: {watch3.minuteHand.position}");
-            Console.WriteLine($"Posição do Segundo: {watch3.secondHand.position}");
+            Console.WriteLine("Hour position: {0}", watch3.hourHand.position);
+            Console.WriteLine("Minute position: {0}", watch3.minuteHand.position);
+            Console.WriteLine("Second position: {0}", watch3.secondHand.position);
 
-            Console.WriteLine($"Hora: {watch3.ReadHour()}");
-            Console.WriteLine($"Minuto: {watch3.ReadMinute()}");
-            Console.WriteLine($"Segundo: {watch3.ReadSecond()}");
+            Console.WriteLine("Hour: {0}", watch3.ReadHour());
+            Console.WriteLine("Minute: {0}", watch3.ReadMinute());
+            Console.WriteLine("Second: {0}", watch3.ReadSecond());
         }
     }
 

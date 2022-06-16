@@ -22,7 +22,7 @@
         {
             try
             {
-                Console.WriteLine("Digite um número entre 0 e 1000:");
+                Console.Write("Enter a number between 0 and 1000: ");
                 int x = Read();
 
                 string? item = null;
@@ -48,7 +48,7 @@
                     }
                 }
 
-                Console.WriteLine($"Resultado: {item}");
+                Console.WriteLine("Result: {0}", item);
             }
             catch (FormatException exception)
             {
@@ -63,7 +63,7 @@
                 return value;
             }
 
-            throw new FormatException("Não foi possível converter o valor digitado para um número válido.");
+            throw new FormatException("Could not convert the entered value to a valid number.");
         }
     }
 }

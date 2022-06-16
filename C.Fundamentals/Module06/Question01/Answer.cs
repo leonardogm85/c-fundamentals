@@ -57,8 +57,8 @@
         public void Print()
         {
             string result = on
-                ? "Lâmpada ligada"
-                : "Lâmpada desligada";
+                ? "Lamp on"
+                : "Lamp off";
 
             Console.WriteLine(result);
         }

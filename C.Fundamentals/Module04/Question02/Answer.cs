@@ -15,8 +15,10 @@
             Fraction f2 = new Fraction(5, 15);
             Fraction f3 = f1.Multiply(f2);
 
-            Console.WriteLine($"Fração: {f3.GetFraction()}");
-            Console.WriteLine($"Calculo: {f3.GetCalculation()}");
+            Console.WriteLine("F1: {0}", f1.GetFraction());
+            Console.WriteLine("F2: {0}", f2.GetFraction());
+            Console.WriteLine("F3 = F1 * F2: {0}", f3.GetFraction());
+            Console.WriteLine("Calculation F3: {0}", f3.GetCalculation());
         }
     }
 

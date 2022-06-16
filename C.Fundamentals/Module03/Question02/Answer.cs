@@ -19,7 +19,7 @@
 
                 while (true)
                 {
-                    Console.WriteLine($"Digite a nota {++count} do aluno (ou -1 para finalizar):");
+                    Console.Write("Enter the student's grade {0} (or -1 to finish): ", ++count);
                     double grade = Read();
 
                     if (grade == -1)
@@ -27,7 +27,7 @@
                         break;
                     }
 
-                    Console.WriteLine("Digite seu peso:");
+                    Console.Write("Enter the weight: ");
                     double weight = Read();
 
                     numerator += grade * weight;
@@ -35,7 +35,7 @@
                 }
 
                 double average = numerator / denominator;
-                Console.WriteLine($"A média do aluno: {average}");
+                Console.WriteLine("The student's average grade: {0}", average);
             }
             catch (FormatException exception)
             {
@@ -50,7 +50,7 @@
                 return value;
             }
 
-            throw new FormatException("Não foi possível converter o valor digitado para um número válido.");
+            throw new FormatException("Could not convert the entered value to a valid number.");
         }
     }
 }

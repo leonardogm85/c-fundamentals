@@ -26,10 +26,10 @@
     {
         internal static void Run()
         {
-            Console.WriteLine("Gerencie sua lista de compras.");
+            Console.WriteLine("Manager your shopping list.");
             Console.WriteLine();
 
-            string path = @"lista.txt";
+            string path = @"list.txt";
 
             if (File.Exists(path))
             {
@@ -39,7 +39,7 @@
 
                     if (!string.IsNullOrWhiteSpace(item))
                     {
-                        Console.WriteLine("Você já possui os seguintes itens na sua lista de compras:");
+                        Console.WriteLine("You already have the following items on your shopping list:");
 
                         do
                         {
@@ -53,14 +53,14 @@
                 }
             }
 
-            Console.WriteLine("Informe os itens da sua lista de compras (Ou informe 0 para encerrar o preenchimento).");
+            Console.WriteLine("Enter the items on your shopping list (Or enter 0 to end).");
             Console.WriteLine();
 
             using (StreamWriter writer = File.AppendText(path))
             {
                 while (true)
                 {
-                    Console.WriteLine("Informe o item:");
+                    Console.Write("Enter the item: ");
                     string? item = Console.ReadLine();
 
                     if (string.IsNullOrWhiteSpace(item))

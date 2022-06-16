@@ -21,11 +21,11 @@
                 drawnNumbers[i] = random.Next(1, 61);
             }
 
-            Console.WriteLine("Simulação de um sorteio da mega-sena. Digite 6 números de 1 a 60:");
+            Console.WriteLine("Simulation of a mega-sena draw. Enter 6 numbers from 1 to 60:");
 
             for (int i = 0; i < chosenNumbers.Length; i++)
             {
-                Console.WriteLine("Palpite {0}:", i + 1);
+                Console.Write("Guess {0}: ", i + 1);
                 chosenNumbers[i] = Read();
 
                 for (int j = 0; j < drawnNumbers.Length; j++)
@@ -37,9 +37,9 @@
                 }
             }
 
-            Console.WriteLine("Números digitados: {0}", string.Join(", ", chosenNumbers));
-            Console.WriteLine("Números sorteados: {0}", string.Join(", ", drawnNumbers));
-            Console.WriteLine("Quantidade de acertos {0}", numberHits);
+            Console.WriteLine("Entered numbers: {0}", string.Join(", ", chosenNumbers));
+            Console.WriteLine("Drawn numbers: {0}", string.Join(", ", drawnNumbers));
+            Console.WriteLine("Number of hits {0}", numberHits);
         }
 
         private static int Read()
@@ -49,7 +49,7 @@
                 return value;
             }
 
-            throw new FormatException("Não foi possível converter o valor digitado para um número válido.");
+            throw new FormatException("Could not convert the entered value to a valid number.");
         }
     }
 }
